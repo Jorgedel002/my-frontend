@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);    
+}
+
+body{
+    margin: 0;
+    background-color: var(--Very-light-gray);
+}
+
+@media (min-width: 900px){
+    .main-container{
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.card-container{
+    width: 90%;
+    margin: 50px auto 50px auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media (min-width: 900px){
+    .card-container{
+        display: flex;
+        max-width: 900px;
+    }
+}
+
+.card{
+    height: 380px;
+    width: 100%;
+}
+
+@media (min-width:900px){
+    .card{
+        height: 480px;
+    }
+}
+
+.title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 33px;
+    padding-left: 40px;
+    color: var(--Very-light-gray);
+}
+
+.text{
+    font-family: 'Lexend Deca', sans-serif;
+    padding-left: 40px;
+    padding-right: 35px;
+    color: var(--Transparent-white);
+}
+
+@media (min-width:900px){
+    .text{
+        line-height: 26px;
+    }
+}
+
+.img{
+    display: block;
+    padding-top: 40px;
+    padding-left: 40px;
+    width: 80px;
+}
+
+.link{
+    font-family: 'Lexend Deca', sans-serif;
+    display: inline-block;
+    background-color: var(--Very-light-gray);
+    padding: 13px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+@media (min-width:900px){
+    .link{
+        margin-top: 80px;
+    }
+
+    .link:hover{
+        border: 3px solid var(--Very-light-gray);
+        color: var(--Very-light-gray);
+        transition: .3s;
+    }
+
+    .img{
+        width: 100px;
+    }
+}
+
+.orange{
+    color: var(--Bright-orange);
+}
+
+.cyan{
+    color: var(--Dark-cyan);
+}
+
+.dark-cyan{
+    color: var(--Very-dark-cyan);
+}
+
+
+.sedans{
+    background-color: var(--Bright-orange);
+}
+
+.suvs{
+    background-color: var(--Dark-cyan);
+}
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+}
+
+@media (min-width:900px){
+    .orange:hover{
+        background-color: var(--Bright-orange);
+    }
+
+    .cyan:hover{
+        background-color: var(--Dark-cyan);
+    }
+
+    .dark-cyan:hover{
+        background-color: var(--Very-dark-cyan);
+    }
+}
