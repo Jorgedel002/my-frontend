@@ -14,11 +14,72 @@
 }
 
 body{
-    background-color: var(--Dark-Blue-2);
+    background-color: var(--Dark-Blue-1);
+}
+
+.header{
+    background-image: url(/fourth/img/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bg
+    background-position-y: 270px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .logo{
     display: block;
-    max-width: 90px;
+    max-width: 80px;
     margin: 25px 15px;
+}
+
+.header-list{
+    position: absolute;
+    right: 0;
+    top: 11px;
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+}
+
+.element-list{
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.element-list a{
+    color: white;
+    text-decoration: none;
+}
+
+.container-intro{
+    margin-top: 60px;
+}
+
+.intro{
+    display: block;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.information-container{
+    color: white;
+    text-align: center;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.text{
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
+    line-height: 20px;
+    background-color: var(--Dark-Blue-2);
 }
