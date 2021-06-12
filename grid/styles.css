@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/grid/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(13, 27, 41);
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+    width: 45%;
+    margin: auto;
+    background-color: tomato;
+}
+
+.card{
+    text-align: center;
+    color: white;
+}
+
+.title{
+    margin: 0;
+}
+
+.text{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.svg{
+    max-width: 50px;
+}
+
+.security{
+    max-width: 40px;
+}
