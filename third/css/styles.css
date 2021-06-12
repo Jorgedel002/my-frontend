@@ -85,3 +85,160 @@ body{
     margin-right: auto;
     padding-bottom: 30px;
 }
+
+.card-container{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--Very-Dark-Cyan);
+    text-align: center;
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    box-shadow: var(--Grayish-Blue-2) 3px 3px 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 380px;
+    border-radius: 15px;
+}
+
+.img-card{
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-title{
+    font-size: 20px;
+}
+
+.sub-text{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.users{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.get-free-container{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    background-color: white;
+    width: 85%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: var(--Grayish-Blue-2) 1px -5px 10px;
+}
+
+.title-footer{
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: var(--Very-Dark-Cyan);
+    margin: 0;
+}
+
+.get-free{
+    display: inline-block;
+    background-color: var(--Pink);
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Very-Dark-Cyan);
+    height: 800px;
+}
+
+.logo-title{
+    padding-top: 130px;
+    padding-left: 25px;
+}
+
+.footer img{
+    display: block;
+    max-width: 130px;
+    color: white;
+}
+
+.contact-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.element-list{
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    margin-top: 25px;
+    text-align: initial;
+}
+
+.icon{
+    padding-right: 15px;
+    padding-top: 4px;
+}
+
+.list{
+    list-style: none;
+    padding-left: 25px;
+    margin-top: 50px;
+}
+
+.list-element{
+    margin-top: 15px;
+}
+
+.list a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.social-media{
+    text-align: center;
+}
+
+.social-icon{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.fa-facebook-f{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.copyright{
+    display: block;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
