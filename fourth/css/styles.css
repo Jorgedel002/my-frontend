@@ -28,6 +28,15 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+@media(min-width: 795px){
+    .header{
+        background-image: url(/fourth/img/bg-curvy-desktop.svg);
+        background-position-y: 280px;
+        background-position-x: -350px;
+        background-size: cover;
+    }
+}
+
 .logo{
     display: block;
     max-width: 80px;
@@ -104,6 +113,33 @@ body{
     border-radius: 50px;
 }
 
+@media (min-width: 795px){
+    .container-intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information-container{
+        background-color: transparent;
+    }
+    .title{
+        width: 530px;
+        font-size: 1.8rem;
+    }
+
+    .text{
+        width: 540px;
+        font-size: 1rem;
+        background-color: transparent;
+    }
+
+    .get-started{
+        width: 210px;
+        font-size: .8rem;
+    }
+}
+
 .main{
     background-color: var(--Dark-Blue-2);
     color: white;
@@ -137,6 +173,25 @@ body{
     margin-right: 20px;
     font-weight: 400;
     font-size: 14px;
+}
+
+@media (min-width:795px){
+    .cards-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 70px;
+        width: 55%;
+        margin: auto;
+    }
+
+    .text-card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .security{
+        max-width: 52px;
+    }
 }
 
 .svg-productive{
@@ -182,6 +237,29 @@ body{
     background-size: 19px;
     background-position: 135px -1px;
     color: var(--Cyan);
+}
+
+@media (min-width:795px){
+    .productive-container{
+        display: flex;
+        width: 100%;
+    }
+
+    .svg-productive{
+        margin: 0;
+        max-width: 100px;
+    }
+
+    .stay-productive{
+        width: 50%;
+        margin-top: 90px;
+        margin-left: 80px;
+    }
+
+    .stay-productive .title{
+        font-size: 2rem;
+        padding-right: 130px;
+    }
 }
 
 .testimonial-container{
@@ -234,6 +312,19 @@ body{
 
 .founder{
     font-size: 10px;
+}
+
+@media (min-width:795px){
+    .testimonial-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonial-card{
+        width: 20.3%;
+        margin: 10px;
+    }
 }
 
 .get-early{
@@ -295,7 +386,7 @@ body{
 .footer-container{
     background-color: var(--Dark-Blue-3);
     font-family: var(--Open-Sans);
-    height: 800px;
+    height: 950px;
 }
 
 .logo-fylo{
@@ -326,5 +417,44 @@ body{
     width: 30px;
     padding-right: 15px;
     padding-top: 4px;
+}
+
+.list{
+    list-style: none;
+    padding-left: 25px;
+    margin-top: 60px;
+}
+
+.list-item{
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.list-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.box-1{
+    margin-bottom:30px ;
+}
+
+.social-media{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.social-icon{
+    color: white;
+    border: 1px solid var(--White);
+    border-radius: 50px;
+    font-size: 13px;
+    padding: 7px;
+    margin-left: 10px;
+}
+
+.fa-facebook-f{
+    padding-left: 9px;
+    padding-right: 9px;
 }
 
