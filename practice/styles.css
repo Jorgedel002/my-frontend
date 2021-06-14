@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Dark-Blue-1 : hsl(217, 28%, 15%); /*(intro and email sign up background)*/
+    --Dark-Blue-2 : hsl(218, 28%, 13%); /*(main background)*/
+    --Dark-Blue-3 : hsl(216, 53%, 9%); /*(footer background)*/
+    --Dark-Blue-4 : hsl(219, 30%, 18%); /*(testimonials background)*/
+}
+
+body{
+    margin: 0;
+    background-color: var(--Dark-Blue-2);
+}
+

@@ -10,7 +10,9 @@
     --Cyan : hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
     --Blue : hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
     --Light-Red : hsl(0, 100%, 63%); /*(error)*/
-    --White: hsl(0, 0%, 100%);        
+    --White: hsl(0, 0%, 100%);
+    --Open-Sans:'Open Sans', sans-serif;
+    --Raleway: 'Raleway', sans-serif;        
 }
 
 body{
@@ -201,19 +203,14 @@ body{
     margin-right: auto;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
 }
 
 
 .testimonial{
     font-size: 11px;
     margin: 0;
+    margin-top: 20px;
     line-height: 20px;
-}
-
-.person{
-    
 }
 
 .person-icon{
@@ -221,12 +218,113 @@ body{
     border-radius: 50px;
 }
 
+.person{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.box{
+    margin-left: 10px;
+}
+
 .name{
     font-size: 13px;
-    margin-left: 7px;
 }
 
 .founder{
     font-size: 10px;
-    margin-left: 40px;
 }
+
+.get-early{
+    font-family: var(--Open-Sans);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--Dark-Blue-1);
+    text-align: center;
+    border-radius: 10px;
+    height: 325px;
+    position: relative;
+    top: 160px;
+}
+
+.get-early .title{
+    padding-top: 35px;
+    font-size: 17px;
+}
+
+.get-early .text{
+    background-color: var(--Dark-Blue-1);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.email{
+    display: block;
+    margin-top: 30px;
+    padding: 15px 25px;
+    width: 85%;
+    border-radius: 50px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+}
+
+::placeholder{
+    color: rgb(173, 172, 172);
+}
+
+.submit{
+    display: block;
+    font-size: 14px;
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 20px;
+    width: 85%;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to right,hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%));
+    font-weight: 700;
+    color: white;
+}
+
+.footer-container{
+    background-color: var(--Dark-Blue-3);
+    font-family: var(--Open-Sans);
+    height: 800px;
+}
+
+.logo-fylo{
+    display: block;
+    max-width: 150px;
+    margin-left: 40px;
+    padding-top: 230px;
+}
+
+.contact-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.list-element{
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    margin-top: 25px;
+    padding-right: 25px;
+    text-align: initial;
+    font-size: 13px;
+}
+
+.icon{
+    width: 30px;
+    padding-right: 15px;
+    padding-top: 4px;
+}
+
