@@ -243,15 +243,19 @@ body{
     .productive-container{
         display: flex;
         width: 100%;
+        border-collapse: unset;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
     }
 
     .svg-productive{
         margin: 0;
-        max-width: 100px;
+        max-width: 100vw;
     }
 
     .stay-productive{
-        width: 50%;
+        width: 550px;
         margin-top: 90px;
         margin-left: 80px;
     }
