@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+    --Alata: 'Alata', sans-serif;
+    --Josefin: 'Josefin Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    background-image: url(/loop-studios/img/mobile/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    font-family: var(--Josefin);
+}
+
+.logo{
+    display: block;
+    max-width: 120px;
+    margin: 0 22px;
+    padding-top: 25px;
+}
+
+.title-container{
+    border: 1px solid white;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    margin-top: 120px;
+
+}
+
+.title{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    margin: 0;
+}
