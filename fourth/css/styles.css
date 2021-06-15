@@ -194,7 +194,7 @@ body{
     }
 }
 
-.svg-productive{
+.img-productive{
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -242,27 +242,33 @@ body{
 @media (min-width:795px){
     .productive-container{
         display: flex;
+        flex-direction: row;
         width: 100%;
-        border-collapse: unset;
-        margin-left: auto;
-        margin-right: auto;
+        height: 400px;
         justify-content: center;
+        align-content: center;
     }
 
-    .svg-productive{
-        margin: 0;
-        max-width: 100vw;
+    .stay-productive .text{
+        width: aut
+    }
+
+    .img-productive{
+        width: 100%;
+        height: auto;
     }
 
     .stay-productive{
-        width: 550px;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
         margin-top: 90px;
-        margin-left: 80px;
     }
 
     .stay-productive .title{
         font-size: 2rem;
         padding-right: 130px;
+        width: auto;
     }
 }
 
@@ -355,10 +361,12 @@ body{
     padding-right: 20px;
 }
 
+
+
 .email{
     display: block;
     margin-top: 30px;
-    padding: 15px 25px;
+    padding: 15px 20px;
     width: 85%;
     border-radius: 50px;
     border: none;
@@ -385,6 +393,44 @@ body{
     hsl(198, 60%, 50%));
     font-weight: 700;
     color: white;
+}
+
+@media (min-width: 795px){
+
+    .get-early{
+        width: 60%;
+        height: 280px;
+        top: 130px;
+    }
+
+    .get-early .title{
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+
+    .get-early .text{
+        font-size: .9rem;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .get-early .title,
+    .get-early .text{
+        margin: auto;
+        width: auto;
+    }
+
+    .email{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .submit{
+        display: inline-block;
+        width: 200px;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: .9rem;
+    }
 }
 
 .footer-container{
@@ -460,5 +506,31 @@ body{
 .fa-facebook-f{
     padding-left: 9px;
     padding-right: 9px;
+}
+
+@media (min-width: 795px){
+    .container-list{
+        display: flex;
+        background-color: blueviolet;
+    }
+
+    .list{
+        display: flex;
+        margin-top: 41px;
+    }
+
+    .box-1{
+        margin-right: 60px;
+    }
+
+    .social-media{
+        margin-top: 41px;
+    }
+
+    .contact-list{
+        width: 300px;
+        display: flex;
+    }
+
 }
 
