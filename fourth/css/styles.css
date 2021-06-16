@@ -21,7 +21,7 @@ body{
 }
 
 .header{
-    background-image: url(/fourth/img/bg-curvy-mobile.svg);
+    background-image: url(../img/bg-curvy-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 300px;
@@ -30,7 +30,7 @@ body{
 
 @media(min-width: 795px){
     .header{
-        background-image: url(/fourth/img/bg-curvy-desktop.svg);
+        background-image: url(../img/bg-curvy-desktop.svg);
         background-position-y: 280px;
         background-position-x: -350px;
         background-size: cover;
@@ -232,7 +232,7 @@ body{
     padding-bottom: 7px;
     font-size: 14px;
     font-weight: 400;
-    background-image: url(/fourth/img/icon-arrow.svg);
+    background-image: url(../img/icon-arrow.svg);
     background-repeat: no-repeat;
     background-size: 19px;
     background-position: 135px -1px;
@@ -273,7 +273,7 @@ body{
 }
 
 .testimonial-container{
-    background-image: url(/fourth/img/bg-quotes.png);
+    background-image: url(../img/bg-quotes.png);
     background-repeat: no-repeat;
     background-size: 23px;
     background-position-x: 36px;
