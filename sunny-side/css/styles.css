@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%); /*(graphic design text)*/
+    --Dark-blue: hsl(198, 62%, 26%); /*(photography text)*/
+    --Dark-moderate-cyan : hsl(168, 34%, 41%); /*(footer)*/
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Barlow: 'Barlow', sans-serif;
+    --Fraunces: 'Fraunces', serif;        
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    background-image: url(../img/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    font-family: var(--Fraunces);
+}
+
+.logo{
+    display: block;
+    padding-top: 40px;
+    margin-left: 20px;
+    max-width: 110px;
+}
+
+.hamburger{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-right: 20px;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 5px;
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+.arrow-down{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main{
+    font-family: var(--Barlow);
+}
+
+.brand{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-text{
+    display: block;
+    width: 80%;
+    height: 100vw;
+    text-align: center;
+    margin: 5rem auto;
+
+}
+
+ .title-text .title{
+    font-family: var(--Fraunces);
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: normal;
+    margin-top: 50px;
+}
+
+.title-text .text{
+    color: var(--Dark-grayish-blue);
+    font-size: 18px;
+    line-height: 25px;
+} 
+
+ .link-learn{
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    position: relative;
+} 
+
+ .link-learn--yellow::before{
+    background-color: yellow;
+}
+
+.link-learn::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.link-learn--pink::before{
+    background-color: rgb(252, 104, 129);
+    opacity: 0.5;
+}
+
+.fruits-container{
+    background-image: url(../img/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    text-align: center;
+}
+
+.title-text-fruits{
+    position: relative;
+    top: 400px;
+    margin-right: 15px;
+    margin-left: 15px;
+    line-height: 25px;
+}
+
+.fruits-container .title{
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    margin: 0;
+    color: var(--Dark-desaturated-cyan);
+    font-size: 28px;
+    letter-spacing: normal;
+    margin-bottom: 30px;
+}
+
+.fruits-container .text{
+    color: var(--Dark-desaturated-cyan);
+}
+
+.fruits-container--mandarina{
+    background-image: url(../img/mobile/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    text-align: center;
+}
+
+.fruits-container--mandarina .title{
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    margin: 0;
+    color: var(--Dark-blue);
+    font-size: 28px;
+    letter-spacing: normal;
+    margin-bottom: 30px;
+}
+
+.fruits-container--mandarina .text{
+    color: var(--Dark-blue);
+}
+
+.testimonial-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-container .title{
+    color: var(--Grayish-blue);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.testimonial{
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.person-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70px;
+    border-radius: 50px;
+}
+
+blockquote{
+    color: var(--Very-dark-grayish-blue);
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.name,
+.position{
+    display: block;
+}
+
+.name{
+    font-family: var(--Fraunces);
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.position{
+    font-size: 14px;
+    color: var(--Grayish-blue);
+}
+
+.grid-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.footer-images{
+    width: 100%;
+}
+
