@@ -16,7 +16,7 @@ body{
 }
 
 .header{
-    background-image: url('/loop-studios/img/mobile/image-hero.jpg');
+    background-image: url('img/mobile/image-hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -117,35 +117,35 @@ body{
 }
 
 .earth{
-    background-image: url(/loop-studios/img/mobile/image-deep-earth.jpg);
+    background-image: url('img/mobile/image-deep-earth.jpg');
 }
 
 .arcade{
-    background-image: url(/loop-studios/img/mobile/image-night-arcade.jpg);
+    background-image: url('img/mobile/image-night-arcade.jpg');
 }
 
 .soccer{
-    background-image: url(/loop-studios/img/mobile/image-soccer-team.jpg);
+    background-image: url('img/mobile/image-soccer-team.jpg');
 }
 
 .grid{
-    background-image: url(/loop-studios/img/mobile/image-grid.jpg);
+    background-image: url('img/mobile/image-grid.jpg');
 }
 
 .above-vr{
-    background-image: url(/loop-studios/img/mobile/image-from-above.jpg);
+    background-image: url('img/mobile/image-from-above.jpg');
 }
 
 .borealis{
-    background-image: url(/loop-studios/img/mobile/image-pocket-borealis.jpg);
+    background-image: url('img/mobile/image-pocket-borealis.jpg');
 }
 
 .curiosity{
-    background-image: url(/loop-studios/img/mobile/image-curiosity.jpg);
+    background-image: url('img/mobile/image-curiosity.jpg');
 }
 
 .fisheye{
-    background-image: url(/loop-studios/img/mobile/image-fisheye.jpg);
+    background-image: url('img/mobile/image-fisheye.jpg');
 }
 
 .see-all{
