@@ -16,7 +16,7 @@ body{
 }
 
 .header{
-    background-image: url(/loop-studios/img/mobile/image-hero.jpg);
+    background-image: url('/loop-studios/img/mobile/image-hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
