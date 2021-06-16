@@ -19,23 +19,30 @@ body{
     background-image: url(/loop-studios/img/mobile/image-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 630px;
+    height: 100vh;
     font-family: var(--Josefin);
 }
 
 .logo{
     display: block;
-    max-width: 120px;
+    max-width: 130px;
     margin: 0 22px;
-    padding-top: 25px;
+    padding-top: 35px;
+}
+
+.hamburger{
+    position: absolute;
+    right: 0;
+    top: 38px;
+    margin-right: 30px;
 }
 
 .title-container{
     border: 1px solid white;
-    width: 300px;
+    width: 310px;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+    padding: 20px;
     margin-top: 120px;
 
 }
@@ -45,4 +52,166 @@ body{
     font-weight: 300;
     font-size: 40px;
     margin: 0;
+}
+
+.interactive-vr{
+    margin-top: 80px;
+}
+
+.vr-image{
+    display: block;
+    width: 85%;
+    margin: auto;
+}
+
+.title-text{
+    font-family: var(--Josefin);
+    font-weight: 300;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.title-text .title{
+    color: var(--Black);
+    font-size: 32px;
+}
+
+.title-text .text{
+    color: var(--Black);
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 23px;
+}
+
+.our-creations{
+    font-family: var(--Josefin);
+    width: 90%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-creations .title{
+    color: var(--Black);
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.creations{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110px;
+    margin-top: 25px;
+}
+
+.creation{
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    padding: 50px 10px 20px;
+}
+
+.earth{
+    background-image: url(/loop-studios/img/mobile/image-deep-earth.jpg);
+}
+
+.arcade{
+    background-image: url(/loop-studios/img/mobile/image-night-arcade.jpg);
+}
+
+.soccer{
+    background-image: url(/loop-studios/img/mobile/image-soccer-team.jpg);
+}
+
+.grid{
+    background-image: url(/loop-studios/img/mobile/image-grid.jpg);
+}
+
+.above-vr{
+    background-image: url(/loop-studios/img/mobile/image-from-above.jpg);
+}
+
+.borealis{
+    background-image: url(/loop-studios/img/mobile/image-pocket-borealis.jpg);
+}
+
+.curiosity{
+    background-image: url(/loop-studios/img/mobile/image-curiosity.jpg);
+}
+
+.fisheye{
+    background-image: url(/loop-studios/img/mobile/image-fisheye.jpg);
+}
+
+.see-all{
+    display: block;
+    font-family: var(--Alata);
+    text-align: center;
+    border: 1px solid black;
+    font-weight: 300;
+    color: var(--Black);
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    letter-spacing: 3px;
+}
+
+.footer{
+    font-family: var(--Alata);
+    background-color: var(--Black);
+    margin-top: 80px;
+    height: 480px;
+}
+
+.logo-footer{
+    display: block;
+    max-width: 130px;
+    padding-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.list-container{
+    text-align: center;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.element-list{
+    margin-top: 20px;
+}
+
+.element-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;    
+}
+
+.icon{
+    display: block;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 25px;
+}
+
+.copyright{
+    display: block;
+    color: var(--Dark-Gray);
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
 }
