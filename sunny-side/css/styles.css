@@ -236,3 +236,7 @@ blockquote{
     width: 100%;
 }
 
+.footer{
+    background-color: hsl(167, 44%, 70%);
+}
+
