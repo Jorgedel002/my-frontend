@@ -43,6 +43,10 @@ body{
     margin-right: 20px;
 }
 
+.header-list{
+    display: none;
+}
+
 .title{
     color: white;
     text-align: center;
@@ -56,6 +60,60 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-width: 700px){
+    .header{
+        background-image: url(../img/desktop/image-header.jpg);
+        height: 800px;
+    }
+
+    .logo{
+        max-width: 140px;
+        margin-left: 30px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .title{
+        font-size: 4rem;
+        letter-spacing: 15px;
+    }
+
+    .header-list{
+        display: flex;
+        position: relative;
+        bottom: 25px;
+        list-style: none;
+        justify-content: flex-end;
+        margin-right: 80px;
+        font-family: var(--Barlow);
+    }
+
+    .item a{
+        color: white;
+        text-decoration: none;
+        margin-right: 40px;
+        font-size: 1.2rem;
+    }
+
+    .contact{
+        text-decoration: none;
+        color: var(--Dark-desaturated-cyan);
+        background-color: white;
+        padding: 15px 25px;
+        border-radius: 50px;
+        bottom: 15px;
+        position: relative;
+    }
+
+    .contact:hover{
+        background-color: rgb(122, 215, 247);
+        color: white;
+        transition: .3s;
+    }
 }
 
 .main{
@@ -73,7 +131,7 @@ body{
 .title-text{
     display: block;
     width: 80%;
-    height: 100vw;
+    height: 320px;
     text-align: center;
     margin: 5rem auto;
 
@@ -124,11 +182,53 @@ body{
     opacity: 0.5;
 }
 
+.brand-desktop{
+    display: none;
+}
+
+@media (min-width:700px){
+    .feature-container{
+        display: flex;
+    }
+
+    .brand{
+        display: none;
+    }
+
+    .brand-desktop{
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    .main .feature-container:nth-child(1){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .title-text{
+        width: 30%;
+        height: 35em;
+        text-align: initial;
+    }
+
+    .title-text .title{
+        text-align: initial;
+        font-size: 2.8rem;
+        padding-right: 3em;
+    }
+
+    .title-text .text{
+        font-size: 1.2rem;
+    }
+
+}
+
 .fruits-container{
     background-image: url(../img/mobile/image-graphic-design.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 600px;
     text-align: center;
 }
 
@@ -158,7 +258,7 @@ body{
     background-image: url(../img/mobile/image-photography.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 600px;
     text-align: center;
 }
 
@@ -174,6 +274,25 @@ body{
 
 .fruits-container--mandarina .text{
     color: var(--Dark-blue);
+}
+
+@media (min-width: 700px){
+    .fruits-flex{
+        display: flex;
+    }
+
+    .fruits-container{
+        background-image: url(../img/desktop/image-graphic-design.jpg);
+    }
+
+    .fruits-container--mandarina{
+        background-image: url(../img/desktop/image-photography.jpg);
+    }
+
+    .title-text-fruits{
+        width: 50%;
+        margin: auto;
+    }
 }
 
 .testimonial-container{
@@ -226,6 +345,21 @@ blockquote{
     color: var(--Grayish-blue);
 }
 
+@media (min-width: 700px){
+    .grid-testimonial{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        margin: auto;
+        height: 500px;
+    }
+
+    blockquote{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
 .grid-images{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -234,6 +368,12 @@ blockquote{
 
 .footer-images{
     width: 100%;
+}
+
+@media (min-width: 700px){
+    .grid-images{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .footer{
@@ -273,3 +413,18 @@ blockquote{
     margin-top: 80px;
 }
 
+@media (min-width: 700px){
+    .footer-elements{
+        width: 40%;
+        margin: auto;
+    }
+
+    .element-list a:hover{
+        color: white;
+        transition: .2s;
+    }
+
+    .social-icon:hover{
+        fill: white;
+    }
+}
