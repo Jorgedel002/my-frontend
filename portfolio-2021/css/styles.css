@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Staatliches: 'Staatliches', cursive;
+    --Josefin: 'Josefin Sans', sans-serif;
+    --Gradient: to left, hsl(175, 98%, 66%), hsl(175, 87%, 57%);
+}
+
+.header{
+    background-image: url(../img/Subtle-Prism.svg);
+    font-family: var(--Staatliches);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav-bar{
+    background:linear-gradient(to left, hsl(165, 85%, 61%), hsl(175, 85%, 62%));
+    transform: translateX(100%);
+    transition: all .4s ease;
+}
+
+.hamburger{
+    display: block;
+    position: absolute;
+    max-width: 25px;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    z-index: 10;
+}
+
+.list{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+    height: 100vh;
+    padding-top: 120px;
+    padding-right: 50px;
+}
+
+.list-item{
+    margin-top: 5px;
+}
+
+.list-item a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+.list-item a:hover{
+    color: rgb(6, 184, 145);
+}
+
+.profile-icon{
+    display: block;
+    max-width: 70px;
+    margin-top: 15px;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-right: 40px;
+}
+
+.social-header{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 80px;
+}
+
+.social-header a{
+    color: white;
+    font-size: 25px;
+}
+
+.social-header a:hover{
+    color: rgb(6, 184, 145);
+}
+
+ .active{
+    left: 0;
+    transform: translateX(0);
+}
+
+.title{
+    border: 3px solid rgb(172, 73, 73);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name{
+    margin: 0;
+}
