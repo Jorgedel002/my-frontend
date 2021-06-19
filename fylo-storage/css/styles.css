@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+    --Gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);    
+}
+
+body{
+    margin: 0;
+    background-color: var(--Dark-Blue);
+    background-image: url(/fylo-storage/img/bg-mobile.png);
+    font-family: 'Raleway', sans-serif;
+}
+
+.archivos{
+    width: 80%;
+    background-color: var(--Dark-Blue);
+    height: 180px;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px 80px 10px 10px;
+    padding-top: 40px;
+}
+
+.img{
+    margin-left: 35px;
+}
+
+.logo{
+    display: block;
+    max-width: 120px;
+}
+
+.icons-container{
+    display: flex;
+    align-items:center;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.icon{
+    display: block;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 39px;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.document{
+    padding: 9px 10px;
+}
+
+.folder{
+    padding: 12px 10px;
+}
+
+.upload{
+    padding: 13px 10px;
+}
+
+.gb-usados{
+    width: 80%;
+    height: 150px;
+    background-color: var(--Dark-Blue);
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    border-radius: 10px;
+}
+
+.text{
+    text-align: center;
+    font-size: 13px;
+    margin: 0;
+    padding: 30px 30px 10px;
+    color: var(--Grayish-Blue);
+}
+
+.GB{
+    color: white;
+    font-weight: 700;
+}
+
+.charge-container{
+    width: 80%;
+    height: 20px;
+    background-color: var(--Very-Dark-Blue);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding-top: 3px;
+}
+
+.charge{
+    width: 75%;
+    background: linear-gradient(to right, var(--Gradient));
+    border-radius: 30px;
+    height: 15px;
+    margin-left: 3px;
+    padding-top: 2px;
+}
+
+.circle{
+    position: relative;
+    left: 94%;
+    border-radius: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.gb-charge{
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.indicador{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gb-libres{
+    width: 40%;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gb-restantes{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.info-gb{
+    padding-top: 17px;
+    font-size: 12px;
+}
+
+.gb-info{
+    
+}
+
