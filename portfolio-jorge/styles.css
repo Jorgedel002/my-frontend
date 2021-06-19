@@ -10,7 +10,7 @@ body{
 
 .header{
     height: 100vh;
-    background-image: url(/img/Subtle-Prism.svg);
+    background-image: url(../portfolio-jorge/img/Subtle-Prism.svg);
     font-family: 'Staatliches', cursive;
 }
 
@@ -72,7 +72,17 @@ body{
     z-index: 10;
 }
 
+.title-container{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 30%;
+    background-color: red;
+}
+
 @media (max-width: 780px){
+    .header{
+        background-size: cover;
+        background-position: left;
+    }
     .list{
         flex-direction: column;
         align-items: flex-end;
