@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+}
+
+.header{
+    height: 100vh;
+    background-image: url(../portfolio-jorge/img/Subtle-Prism.svg);
+    font-family: 'Staatliches', cursive;
+}
+
+.list{
+    position: relative;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.list-item{
+    padding: 25px;
+}
+
+.list-item:nth-child(1),
+.list-item:nth-child(5){
+    margin-top: 30px;
+}
+
+.list-item:nth-child(2),
+.list-item:nth-child(4){
+    margin-top: 10px;
+}
+
+.list-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.list-item a:hover{
+    background-color: white;
+    color: rgb(7, 129, 117);
+    border: 3px solid rgb(7, 129, 117);
+    transition: .4s;
+}
+
+.profile{
+    display: block;
+    border-radius: 100px;
+    border: 3px solid rgb(255, 255, 255);
+    max-width: 70px;
+    cursor: pointer;
+}
+
+.profile:hover{
+    max-width: 80px;
+    transition: .8s;
+}
+
+.hamburger-icon{
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 20px 20px;
+    max-width: 30px;
+    z-index: 10;
+}
+
+.title-container{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 30%;
+    background-color: red;
+}
+
+@media (max-width: 780px){
+    .header{
+        background-size: cover;
+        background-position: left;
+    }
+    .list{
+        flex-direction: column;
+        align-items: flex-end;
+        background: linear-gradient(to left, hsl(175, 98%, 66%), hsl(175, 87%, 57%));
+        height: 100vh;
+        padding: 50px 30px;
+        left: 100%;
+        transition: all .4s ease;
+    }
+
+    .list-item:nth-child(3){
+        margin-right: 50px;
+    }
+
+    .hamburger-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .list-active{
+        left: 0;
+    }
+}
