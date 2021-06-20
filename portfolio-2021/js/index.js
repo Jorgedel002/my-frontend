@@ -1,6 +1,6 @@
 const iconNav = document.querySelector('#hamburger'),
       navList = document.querySelector('#nav-bar');
 
-      iconNav.addEventListener('click', (e) =>{
+      iconNav.addEventListener('click', () =>{
           navList.classList.toggle('active');
       })
