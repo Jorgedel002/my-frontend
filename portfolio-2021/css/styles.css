@@ -7,6 +7,7 @@
 :root{
     --Staatliches: 'Staatliches', cursive;
     --Josefin: 'Josefin Sans', sans-serif;
+    --Sacramento: 'Sacramento', cursive;
     --Gradient: to left, hsl(175, 98%, 66%), hsl(175, 87%, 57%);
     --Very-Dark-Cyan: rgb(0, 46, 58);
 }
@@ -17,6 +18,16 @@
     font-family: var(--Staatliches);
     height: 100vh;
     overflow: hidden;
+}
+
+.name-logo{
+    font-family: var(--Sacramento);
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: rgb(0, 81, 95);
+    
 }
 
 .nav-bar{
@@ -71,19 +82,19 @@
     margin-right: 40px;
 }
 
-.social-header{
+.social-media{
     display: flex;
     justify-content: space-evenly;
     position: relative;
     bottom: 80px;
 }
 
-.social-header a{
+.social-media a{
     color: white;
     font-size: 25px;
 }
 
-.social-header a:hover{
+.social-media a:hover{
     color: rgb(6, 184, 145);
 }
 
@@ -235,15 +246,16 @@
 .link-page{
     margin-bottom: 25px;
     text-decoration: none;
-    color: rgb(0, 57, 131);
+    color: rgb(0, 38, 87);
     position: relative;
+    font-weight: 900;
 }
 
 .link-page::before{
     content: '';
     position: absolute;
     width: 100%;
-    height: 8px;
+    height: 7px;
     left: 0;
     bottom: 0;
     border-radius: 10px;
@@ -255,5 +267,94 @@
     background-color: rgb(14, 61, 216);
 }
 
+.contact .title{
+    color: rgb(0, 131, 118);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgb(209, 208, 208) 2px 2px 15px,
+                  rgb(209, 208, 208) -2px -2px 15px;
+    position: relative;
+    top: 15px;
+    z-index: 10;
+    background-color: white;              
+}
 
+.form{
+    text-align: initial;
+    padding: 15px;
+    box-shadow: rgb(209, 208, 208) 2px 2px 15px,
+    rgb(209, 208, 208) -2px -2px 15px;
+}
+
+.inputs{
+    margin-top: 25px;
+}
+
+input{
+    font-family: var(--Staatliches);
+    margin-top: 15px;
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    border: 2px solid rgb(0, 36, 32);
+}
+
+::placeholder{
+    color: rgb(0, 38, 87);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+textarea{
+    margin-top: 15px;
+    width: 90%;
+    max-width: 90%;
+    border: 2px solid rgb(0, 36, 32);
+    outline: none;
+}
+
+.enviar{
+    width: 100%;
+    font-size: 18px;
+}
+
+.enviar:hover{
+    background-color: rgb(0, 46, 58);
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.enviar::placeholder{
+    font-size: 28px;
+}
+
+.footer{
+    font-family: var(--Sacramento);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+    background-color: rgb(0, 36, 32);
+    height: 150px;
+}
+
+.footer h1{
+    color: white;
+    font-weight: 200;
+}
+
+.footer .social-media{
+    position: static;
+}
+
+.footer .social-media .fab{
+    margin: 30px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
