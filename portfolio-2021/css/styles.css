@@ -10,9 +10,13 @@
     --Sacramento: 'Sacramento', cursive;
     --Gradient: to left, hsl(175, 98%, 66%), hsl(175, 87%, 57%);
     --Very-Dark-Cyan: rgb(0, 46, 58);
+    --Red-Hat-Display: 'Red Hat Display', sans-serif;
 }
 
 .header{
+    position: absolute;
+    top: 0;
+    width: 100%;
     background-image: url(../img/Subtle-Prism.svg);
     background-position: left;
     font-family: var(--Staatliches);
@@ -140,8 +144,101 @@
     margin-top: 90px;
 }
 
+.section-container:first-child{
+    margin-top: 680px;
+}
+
 .section-container .title{
     text-align: center;
+}
+
+.window-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-family: var(--Red-Hat-Display);
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    transform: translateY(-100%);
+    transition: all .5s ease;
+    overflow: scroll;
+}
+
+.active-w{
+    transform: translateY(0);
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+.img-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-icon{
+    max-width: 80px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: 2px solid rgb(0, 81, 95);
+}
+
+.me{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.me h3{
+    color: rgba(0, 0, 0, .6);
+    margin-top: 3px;
+}
+
+.sobre-mi{
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.sobre-mi h2{
+    font-size: 19px;
+}
+
+.text-card{
+    padding-right: 15px;
+    margin-top: 30px;
+}
+
+.tecnologias-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.tecnologias-title{
+    margin-top: 20px;
+}
+
+.tecnologia-icon{
+    display: block;
+    max-width: 90px;
+}
+
+.tecnologia-icon:nth-child(2){
+    max-width: 80px;
 }
 
 .tecnologia{
