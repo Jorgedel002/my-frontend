@@ -1,7 +1,7 @@
 const iconNav = document.querySelector('#hamburger'),
        open = document.querySelector('#open'),
        close = document.querySelector('#close'),
-      navList = document.querySelector('#nav-bar');
+      navList = document.querySelector('#nav-bar'),
       windowC = document.querySelector('#window');
 
       iconNav.addEventListener('click', () =>{

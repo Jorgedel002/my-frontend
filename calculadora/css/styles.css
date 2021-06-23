@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    font-family: var(--Spartan);
+}
+
+:root{
+    --Very-dark-desaturated-blue-1: hsl(222, 26%, 31%);  /*(main background)*/
+    --Very-dark-desaturated-blue-2 : hsl(223, 31%, 20%); /*(toggle background, keypad background)*/
+    --Very-dark-desaturated-blue-3 : hsl(224, 36%, 15%); /*(screen background)*/
+    --Desaturated-dark-blue-1: hsl(225, 21%, 49%); /*(key background)*/
+    --Desaturated-dark-blue-2 : hsl(224, 28%, 35%); /*(key shadow)*/
+    --Red : hsl(6, 63%, 50%); /*(key background, toggle)*/
+    --Dark-red: hsl(6, 70%, 34%); /*(key shadow)*/
+    --Light-grayish-orange : hsl(30, 25%, 89%); /*(key background)*/
+    --Grayish-orange: hsl(28, 16%, 65%); /*(key shadow)*/
+    --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --White: hsl(0, 0, 100%);
+    --Light-gray: hsl(0, 0%, 90%); /*(main background)*/
+    --Grayish-red: hsl(0, 5%, 81%); /*(toggle background, keypad background)*/
+    --Very-light-gray: hsl(0, 0%, 93%); /*(screen background)*/
+    --Dark-moderate-cyan : hsl(185, 42%, 37%); /*(key background)*/
+    --Very-dark-cyan: hsl(185, 58%, 25%); /*(key shadow)*/
+    --Orange: hsl(25, 98%, 40%); /*(key background, toggle)*/
+    --Dark-orange: hsl(25, 99%, 27%); /*(key shadow)*/
+    --Light-grayish-yellow: hsl(45, 7%, 89%); /*(key background)*/
+    --Dark-grayish-orange : hsl(35, 11%, 61%); /*(key shadow)*/
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --Very-dark-violet : hsl(268, 75%, 9%); /*(main background)*/
+    --Very-dark-violet : hsl(268, 71%, 12%); /*(toggle background, keypad background, screen background)*/
+    --Dark-violet : hsl(281, 89%, 26%); /*(key background)*/
+    --Vivid-magenta : hsl(285, 91%, 52%); /*(key shadow)*/
+    --Pure-cyan: hsl(176, 100%, 44%); /*(key background, toggle)*/
+    --Soft-cyan: hsl(177, 92%, 70%); /*(key shadow)*/
+    --Very-dark-violet: hsl(268, 47%, 21%); /*(key background)*/
+    --Dark-magenta: hsl(290, 70%, 36%); /*(key shadow)*/
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White: hsl(0, 0, 100%); /*(text)*/
+    --Spartan: 'Spartan', sans-serif;    
+}
+
+body{
+    background-color: var(--Very-dark-desaturated-blue-1);
+    padding: 15px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column ;
+    height: 160px;
+}
+
+.top{
+    display: flex;
+}
+
+.title{
+    display: block;
+    color: white;
+    font-size: 32px;
+}
+
+.theme-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;
+}
+
+.theme{
+    display: block;
+    margin-right: 20px;
+    font-size: 13px;
+    padding-bottom: 3px;
+    color: white;
+}
+
+.change-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 28%;
+
+}
+
+.change{
+    color: white;
+    font-size: 12px;
+}
+
+.change-box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--Very-dark-desaturated-blue-2);
+    width: 100%;
+    border-radius: 50px;
+    height: 25px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    background-color: var(--Red);
+    border-radius: 50px;
+}
+
+.result-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--Very-dark-desaturated-blue-3);
+    height: 80px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 28px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.result-container::placeholder{
+    color: white;
+}
+
+.result{
+    color: white;
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: var(--Very-dark-desaturated-blue-2);
+    margin-top: 20px;
+    height: 410px;
+    border-radius: 10px;
+    padding: 25px;
+    justify-items: center;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-grayish-orange);
+    width: 15vw;
+    height: 55px;
+    color: var(--Desaturated-dark-blue-2);
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: var(--Grayish-orange) 0px 4px;
+    border: none;
+    font-weight: 700;
+}
+
+button:nth-child(4){
+    background-color: var(--Desaturated-dark-blue-1);
+    color: white;
+    font-size: 16px;
+    box-shadow: var(--Desaturated-dark-blue-2) 0px 4px;
+}
+
+button:nth-child(17){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--Desaturated-dark-blue-1);
+    color: white;
+    font-size: 15px;
+    box-shadow: var(--Desaturated-dark-blue-2) 0px 4px;
+    width: 90%;
+}
+
+button:nth-child(18){
+    width: 90%;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: var(--Red);
+    color: white;
+    font-size: 15px;
+    box-shadow: var(--Dark-red) 0px 4px;
+}
