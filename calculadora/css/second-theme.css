@@ -1,0 +1,59 @@
+
+:root{
+    --Light-grayish-orange : hsl(30, 25%, 89%); /*(key background)*/
+    --Grayish-orange: hsl(28, 16%, 65%); /*(key shadow)*/
+    --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --White: hsl(0, 0, 100%);
+    --Light-gray: hsl(0, 0%, 90%); /*(main background)*/
+    --Grayish-red: hsl(0, 5%, 81%); /*(toggle background, keypad background)*/
+    --Very-light-gray: hsl(0, 0%, 93%); /*(screen background)*/
+    --Dark-moderate-cyan : hsl(185, 42%, 37%); /*(key background)*/
+    --Very-dark-cyan: hsl(185, 58%, 25%); /*(key shadow)*/
+    --Orange: hsl(25, 98%, 40%); /*(key background, toggle)*/
+    --Dark-orange: hsl(25, 99%, 27%); /*(key shadow)*/
+    --Light-grayish-yellow: hsl(45, 7%, 89%); /*(key background)*/
+    --Dark-grayish-orange : hsl(35, 11%, 61%); /*(key shadow)*/    
+}
+
+.active-1{
+    background-color: var(--Light-gray);
+}
+
+.active-1 .title, 
+.active-1 .theme,
+.active-1 .change,
+.active-1 .result-container,
+.active-1 button{
+    color: var(--Very-dark-grayish-blue);
+}
+
+.active-1 .bar{
+    background-color: var(--Grayish-red);
+}
+
+.active-1 .circle{
+    background-color: var(--Orange);
+}
+
+.active-1 .result-container{
+    background-color: var(--Very-light-gray);
+}
+
+.active-1 .main{
+    background-color: var(--Grayish-red);
+}
+
+.active-1 button:nth-child(4),
+.active-1 button:nth-child(17){
+    background-color: var(--Dark-moderate-cyan);
+    box-shadow: var(--Very-dark-cyan) 0px 4px;
+}
+
+.active-1 button:nth-child(18){
+    background-color: var(--Orange);
+    box-shadow: var(--Dark-red) 0px 4px;
+}
+
+.center{
+    justify-content: center;
+}

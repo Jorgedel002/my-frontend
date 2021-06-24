@@ -88,24 +88,29 @@ body{
 .change{
     color: white;
     font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .change-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
 .bar{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     background-color: var(--Very-dark-desaturated-blue-2);
     width: 100%;
     border-radius: 50px;
     height: 25px;
     padding-left: 4px;
     padding-right: 4px;
+}
+
+.start{
+    justify-content: start;
 }
 
 .circle{

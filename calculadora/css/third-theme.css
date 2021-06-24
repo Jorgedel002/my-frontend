@@ -1,0 +1,58 @@
+
+:root{
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --Very-dark-violet-1 : hsl(268, 75%, 9%); /*(main background)*/
+    --Very-dark-violet-2 : hsl(268, 71%, 12%); /*(toggle background, keypad background, screen background)*/
+    --Dark-violet : hsl(281, 89%, 26%); /*(key background)*/
+    --Vivid-magenta : hsl(285, 91%, 52%); /*(key shadow)*/
+    --Pure-cyan: hsl(176, 100%, 44%); /*(key background, toggle)*/
+    --Soft-cyan: hsl(177, 92%, 70%); /*(key shadow)*/
+    --Very-dark-violet-3: hsl(268, 47%, 21%); /*(key background)*/
+    --Dark-magenta: hsl(290, 70%, 36%); /*(key shadow)*/
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White: hsl(0, 0, 100%); /*(text)*/    
+}
+
+.active-2{
+    background-color: var(--Very-dark-violet-1);
+}
+
+.active-2 .title, 
+.active-2 .theme,
+.active-2 .change,
+.active-2 .result-container,
+.active-2 button{
+    color: var(--Light-yellow);
+}
+
+.active-2 .bar,
+.active-2 .result-container,
+.active-2 .main{
+    background-color: var(--Very-dark-violet-2);
+}
+
+.active-2 .circle{
+    background-color: var(--Pure-cyan);
+}
+
+.active-2 button{
+    background-color: var(--Very-dark-violet-3);
+    box-shadow: var(--Dark-magenta) 0px 4px;
+}
+
+.active-2 button:nth-child(4),
+.active-2 button:nth-child(17){
+    background-color: var(--Dark-violet);
+    box-shadow: var(--Vivid-magenta) 0px 4px;
+}
+
+.active-2 button:nth-child(18){
+    background-color: var(--Pure-cyan);
+    box-shadow: var(--Soft-cyan) 0px 4px;
+    color: var(--Very-dark-blue);
+}
+
+.end{
+    justify-content: flex-end;
+}

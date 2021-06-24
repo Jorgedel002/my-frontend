@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/second-theme.css">
+    <link rel="stylesheet" href="css/third-theme.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">    
 </head>
-<body>
+<body class="active-1 active-2">
     <header class="header">
         <div class="top">
             <span class="title">calc</span>
@@ -22,7 +24,7 @@
                         <span class="change" id="second-theme">2</span>
                         <span class="change" id="third-theme">3</span>
                     </div>
-                    <div class="bar">
+                    <div class="bar" id="bar">
                         <div class="circle"></div>
                     </div>
                 </div>
@@ -54,5 +56,7 @@
         <button onclick="document.calc.text.value=''">RESET</button>
         <button onclick="document.calc.text.value= eval(calc.text.value)">=</button>
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>
