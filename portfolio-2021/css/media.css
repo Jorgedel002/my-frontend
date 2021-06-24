@@ -1,0 +1,157 @@
+@media (min-width: 912px){
+    .header{
+        position: static;
+    }
+
+    .name-logo{
+        font-size: 2.5rem;
+        margin: 20px 40px;
+    }
+    
+    
+    .hamburger{
+        display: none;
+    }
+
+    .nav-bar{
+        position: static;
+        width: 100%;
+        transform: translate(0);
+        background: none;
+        margin-top: 50px;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: static;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-item{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .list-item:nth-child(1),
+    .list-item:nth-child(5){
+        margin-top: 25px;
+    }
+
+    .list-item a{
+        font-size: 1.8rem;
+    }
+
+    .list-item a:hover{
+        transition: .4s;
+    }
+
+    .social-media{
+        display: none;
+    }
+
+    .profile-icon{
+        margin: 0;
+        max-width: 80px;
+        cursor: pointer;
+    }
+
+    .profile-icon:hover{
+        max-width: 90px;
+        transition: .4s;
+    }
+
+    .name-container{
+        width: 600px;
+        margin-top: 270px;
+        margin-left: 200px;
+    }
+
+    .name{
+        font-size: 4rem;
+    }
+
+    .section-container .title{
+        font-size: 2.2rem;
+    }
+
+    .section-container:first-child{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 80px;
+    }
+
+    .section-container:first-child .title{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .tecnologia{
+        width: 80%;
+    }
+
+    .section-container:nth-child(2){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .section-container:nth-child(2) .title{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .proyecto{
+        display: flex;
+        width: 55%;
+        height: 270px;
+    }
+
+    .page-img{
+        display: none;
+    }
+
+    .page-desk{
+        display: block;
+        height: 300px;
+        width: 100%;
+    }
+
+    .proyecto-img{
+        width: 70%;
+    }
+
+    .nombre-proyecto{
+        font-size: 1.4rem;
+    }
+
+    .info-proyecto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .link-page{
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+
+    .tecnologias{
+        margin-top: 80px;
+    }
+
+    .tecnologias span:first-child{
+        font-size: 1.3rem;
+    }
+}

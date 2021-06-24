@@ -148,7 +148,7 @@
 }
 
 .section-container:first-child{
-    margin-top: 680px;
+    margin-top: 880px;
 }
 
 .section-container .title{
@@ -313,6 +313,10 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.page-desk{
+    display: none;
 }
 
 .nombre-proyecto{
