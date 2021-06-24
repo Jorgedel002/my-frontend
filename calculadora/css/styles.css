@@ -81,7 +81,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 28%;
+    width: 68.92px;
 
 }
 
@@ -146,6 +146,22 @@ body{
     margin-right: 20px;
 }
 
+@media (min-width: 768px){
+
+    body{
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .result-container{
+        height: 150px;
+    }
+
+    .header{
+        height: 240px;
+    }
+}
+
 .main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -198,4 +214,22 @@ button:nth-child(18){
     color: white;
     font-size: 15px;
     box-shadow: var(--Dark-red) 0px 4px;
+}
+
+@media (min-width: 768px){
+    .main{
+        height: 580px;
+    }
+
+    button{
+        width: 140px;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    button:nth-child(4),
+    button:nth-child(17),
+    button:nth-child(18){
+        font-size: 25px;
+    }
 }
