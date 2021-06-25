@@ -453,13 +453,25 @@ textarea{
     font-weight: 200;
 }
 
-.footer .social-media{
-    position: static;
-}
-
-.footer .social-media .fab{
+.footer .social-media-footer .fab{
     margin: 30px 20px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.social-media-footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.social-media-footer a{
+    color: white;
+    font-size: 25px;
+}
+
+.social-media-footer a:hover{
+    color: rgb(6, 184, 145);
 }
 
