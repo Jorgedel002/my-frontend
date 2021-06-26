@@ -60,6 +60,7 @@ body{
     display: flex;
     align-items: center;
     padding-left: 2px;
+    padding-right: 2px;
     width: 50px;
     height: 25px;
     background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
@@ -73,7 +74,11 @@ body{
     border-radius: 50px;
 }
 
-.social-followers-container{
+.active{
+    justify-content: flex-end;
+}
+
+.section-container{
     display: grid;
 }
 
@@ -83,10 +88,13 @@ body{
     align-items: center;
     background-color: var(--Dark-Desaturated-Blue);
     width: 100%;
+    max-width: 463px;
     margin-top: 30px;
     padding: 20px 0;
     border-radius: 5px;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-followers:first-child{
@@ -113,6 +121,7 @@ body{
 .red-social{
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .social-icon{
@@ -126,13 +135,105 @@ body{
     font-weight: 700;
 }
 
+.social-followers{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .number-followers{
     color: var(--White);
     font-size: 52px;
     font-weight: 700;
 }
 
-.social-followers span{
+.social-followers p{
     color: var(--Dark-Grayish-Blue);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 700;
 }
+
+.media-today{
+    display: flex;
+    align-items: center;
+}
+
+.today{
+    color: var(--White);
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.card-followers:nth-child(2) .today,
+.card-followers:nth-child(3) .today{
+    color: var(--Lime-Green);
+}
+
+.card-followers:last-child .today{
+    color: var(--Bright-Red);
+}
+
+.section-container:nth-child(2){
+    margin-top: 50px;
+}
+
+.card-info{
+    background-color: var(--Dark-Desaturated-Blue);
+    width: 100%;
+    max-width: 463px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.card-top,
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-top{
+    margin-bottom: 20px;
+    height: 30px;
+    align-items: center;
+}
+
+.card-top p{
+    font-weight: 700;
+    color: var(--Desaturated-Blue);
+    font-size: 15px;
+}
+
+.percent{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.percent span{
+    color: var(--Lime-Green);
+    margin-left: 3px;
+    font-size: 12px;
+    
+}
+
+.num{
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+}
+
+.card-info:nth-child(3) .percent span,
+.card-info:nth-child(7) .percent span,
+.card-info:nth-child(8) .percent span{
+    color: var(--Bright-Red);
+}
+
+
+
 

@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">    
     <title>Document</title>
 </head>
-<body>
+<body class="" id="light-theme">
     <header class="header">
         <div class="header-top">
             <h1 class="title">Social Media Dashboard</h1>
@@ -19,13 +20,13 @@
         </div>
         <div class="header-bottom">
             <span class="theme">Dark Mode</span>
-            <div class="toggle-container">
-                <div class="circle"></div>
+            <div class="toggle-container" id="toggle">
+                <div class="circle" id="active"></div>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="social-followers-container">
+        <section class="section-container">
             <div class="card-followers">
                 <div class="red-social">
                     <img src="img/icon-facebook.svg" alt="" class="social-icon">
@@ -83,6 +84,115 @@
                 </div>
             </div>
         </section>
+        <section class="section-container">
+            <h2 class="title">Overview - Today</h2>
+            <div class="card-info">
+                <div class="card-top">
+                    <p>Page Views</p>
+                    <img src="img/icon-facebook.svg" alt="">
+                </div>
+                <div class="card-bottom">
+                    <span class="num">87</span>
+                    <div class="percent">
+                        <img src="img/icon-up.svg" alt="">
+                        <span>3%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-top">
+                    <p>Likes</p>
+                    <img src="img/icon-facebook.svg" alt="">
+                </div>
+                <div class="card-bottom">
+                    <span class="num">52</span>
+                    <div class="percent">
+                        <img src="img/icon-down.svg" alt="">
+                        <span class="red">2%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-top">
+                    <p>Likes</p>
+                    <img src="img/icon-instagram.svg" alt="">
+                </div>
+                <div class="card-bottom">
+                    <span class="num">5462</span>
+                    <div class="percent">
+                        <img src="img/icon-up.svg" alt="">
+                        <span>2257%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-top">
+                    <p>Profile Views</p>
+                    <img src="img/icon-instagram.svg" alt="">
+                </div>
+                <div class="card-bottom">
+                    <span class="num">52k</span>
+                    <div class="percent">
+                        <img src="img/icon-up.svg" alt="">
+                        <span>1375%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-top">
+                    <p>Retweets</p>
+                    <img src="img/icon-twitter.svg" alt="">
+                </div>
+                <div class="card-bottom">
+                    <span class="num">117</span>
+                    <div class="percent">
+                        <img src="img/icon-up.svg" alt="">
+                        <span>303%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-top">
+                    <p>Likes</p>
+                    <img src="img/icon-youtube.svg" alt="">
+                </div>
+                <div class="card-bottom">
+                    <span class="num">107</span>
+                    <div class="percent">
+                        <img src="img/icon-up.svg" alt="">
+                        <span class="red">10%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-top">
+                    <p>Total Views</p>
+                    <img src="img/icon-youtube.svg" alt="">
+                </div>
+                <div class="card-bottom">
+                    <span class="num">1407</span>
+                    <div class="percent">
+                        <img src="img/icon-down.svg" alt="">
+                        <span class="red">12%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-top">
+                    <p>Page Views</p>
+                    <img src="img/icon-facebook.svg" alt="">
+                </div>
+                <div class="card-bottom">
+                    <span class="num">87</span>
+                    <div class="percent">
+                        <img src="img/icon-down.svg" alt="">
+                        <span class="red">3%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+@media (min-width: 1004px){
+    .section-container:first-child{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .card-followers{
+        width: 320px;
+        height: 250px;
+    }
+
+    .number-followers{
+        
+    }
+}
