@@ -166,6 +166,7 @@ body{
     margin-left: 4px;
 }
 
+.card-followers:first-child .today,
 .card-followers:nth-child(2) .today,
 .card-followers:nth-child(3) .today{
     color: var(--Lime-Green);
