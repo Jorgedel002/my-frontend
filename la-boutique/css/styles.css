@@ -1,0 +1,40 @@
+:root{
+    --Barlow: 'Barlow', sans-serif;
+    --Heebo: 'Heebo', sans-serif;
+    --Dark-Pink: hsl(315, 100%, 13%);
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: var(--Dark-Pink);
+    font-family: var(--Heebo);
+    overflow: hidden;
+}
+
+.img-logo-container{
+    width: 150px;
+}
+
+.logo{
+    display: none;
+    width: 70%;
+}
+
+.title{
+    position: absolute;
+    top: 30px;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.nav-icon{
+    position: absolute;
+    right: 0;
+    top: 35px;
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+}
