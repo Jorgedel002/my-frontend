@@ -1,6 +1,9 @@
 const openSub1 = document.querySelector('#open-sub-1');
 const openSub2 = document.querySelector('#open-sub-2');
 const openSub3 = document.querySelector("#open-sub-3");
+const openSub4 = document.querySelector('#open-sub-4');
+const openSub5 = document.querySelector('#open-sub-5');
+const openSub6 = document.querySelector("#open-sub-6");
 const open = document.querySelector('#open');
 const list = document.querySelector('#list');
 const subItem1 = document.querySelector('#sub-list-1');
@@ -21,16 +24,32 @@ const subItem3 = document.querySelector('#sub-list-3');
 
       openSub1.addEventListener('click', () => {
           subItem1.classList.toggle('item-active-1');
-          openSub1.classList.toggle('rotate')
+          openSub1.classList.toggle('rotate');
       })
 
        openSub2.addEventListener('click', () => {
          subItem2.classList.toggle('item-active-1');
-         openSub2.classList.toggle('rotate')
+         openSub2.classList.toggle('rotate');
          
      })
 
      openSub3.addEventListener('click', () => {
          subItem3.classList.toggle('item-active-1');
-         openSub3.classList.toggle('rotate')
+         openSub3.classList.toggle('rotate');
      })
+
+     openSub4.addEventListener('click', () => {
+        subItem1.classList.toggle('item-active-1');
+        openSub1.classList.toggle('rotate');
+    })
+
+     openSub5.addEventListener('click', () => {
+       subItem2.classList.toggle('item-active-1');
+       openSub2.classList.toggle('rotate');
+       
+   })
+
+   openSub6.addEventListener('click', () => {
+       subItem3.classList.toggle('item-active-1');
+       openSub3.classList.toggle('rotate');
+   })

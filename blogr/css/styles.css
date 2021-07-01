@@ -62,7 +62,6 @@ body{
     align-items: center;
     font-family: var(--Ubuntu);
     width: 100%;
-    display: flex;
     justify-content: space-around;
     margin-top: 30px;
 }
@@ -251,7 +250,7 @@ body{
     background-color: var(--Very-dark-gray-blue);
     border-bottom-left-radius: 80px;
     border-top-right-radius: 80px;
-    height: 500px;
+    height: 520px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -286,14 +285,68 @@ body{
 }
 
 .section-infrastructure .article-container .text{
-    color: white;
+    color: var(--Grayish-blue);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    line-height: 25px;
 }
 
 .section-infrastructure .article-container div:nth-child(2){
     position: relative;
-    bottom: 100px;
+    bottom: 70px;
     z-index: 120;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--Ubuntu);
+    background-color: var(--Very-dark-black-blue);
+    padding-bottom: 50px;
+    border-top-right-radius: 100px;
+    margin-top: 80px;
+}
+
+.footer-logo-container{
+    margin-top: 50px;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer-list li ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.list-item{
+    margin-top: 20px;
+}
+
+.list-item li a{
+    font-family: var(--Overpass);
+    color: var(--Grayish-blue);
+    text-decoration: none;
+    font-weight: 400;
+    padding: 5px 0px;
 }
