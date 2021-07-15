@@ -1,4 +1,4 @@
-@media (min-width: 1146px){
+@media (min-width: 1204px){
     .header{
         padding: 50px;
     }
@@ -18,6 +18,7 @@
         position: absolute;
         top: -8px;
         margin-left: 150px;
+        width: 83%;
     }
 
     .list{
@@ -26,7 +27,16 @@
     }
 
     .user-container{
+        position: relative;
+        right: 150px;
         flex-direction: row;
+    }
+
+     .link-log:nth-child(2){
+        color: hsl(356, 100%, 66%);
+        background: none;
+        background-color: white;
+        width: 70px;
     }
 
     .item-list{
@@ -47,5 +57,59 @@
 
     .color{
         display: none;
+    }
+
+    .intro{
+        max-width: 80%;
+    }
+
+    .title{
+        font-size: 3.5rem;
+    }
+
+    .links{
+        justify-content: center;
+    }
+
+    .link{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .img-illustration{
+        display: none;
+    }
+
+    .img-illustration-desk{
+        display: block;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .section-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-container{
+        width: 55%;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .article-container{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+    }
+
+    .section-infrastructure{
+        width: 100%;
     }
 }

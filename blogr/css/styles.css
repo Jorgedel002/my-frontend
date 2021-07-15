@@ -70,6 +70,7 @@ body{
     display: block;
     text-decoration: none;
     width: 45%;
+    max-width: 202.5px;
     padding: 13px 0px;
     border-radius: 50px;
     font-weight: 700;
@@ -215,6 +216,10 @@ body{
     margin-right: auto;
     width: 100%;
     max-width:589px;
+}
+
+.img-illustration-desk{
+    display: none;
 }
 
 .article-container{
