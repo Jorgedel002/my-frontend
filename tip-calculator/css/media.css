@@ -1,0 +1,58 @@
+@media(min-width: 710px){
+    .main-container{
+        max-width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(min-width: 1363px){
+    .main-container{
+        max-width: 1000px;
+        flex-direction: row;
+        height: 480px;
+        padding: 0px;
+    }
+
+    .settings-container{
+        padding: 30px;
+    }
+
+    .result-container{
+        width: 45%;
+        height: 420px;
+        margin-left: 20px;
+    }
+
+    .select-tip-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .tip{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 40px;
+    }
+
+    .tip-option{
+        max-width: 120px;
+        padding-top: 8px;
+    }
+
+    .number-people{
+        margin-top: 40px;
+    }
+
+    .container-total{
+        padding: 20px 40px;
+    }
+
+    .total-amount{
+        font-size: 2.4rem;
+    }
+
+    .reset{
+        margin-top: 90px;
+        max-width: 420px;
+    }
+}

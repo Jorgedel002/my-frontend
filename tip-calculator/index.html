@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <img src="img/logo.svg" alt="" class="logo" />
+    <div class="main-container">
+        <section class="settings-container">
+            <p class="text dark-grayish-cyan">Bill</p>
+            <input type="text"  name="text" class="bill-container" autocomplete="off" placeholder="0" id="bill">
+                <img src="img/icon-dollar.svg" alt="" class="dolar">
+            </input>
+            <div class="select-tip-container" id="tip">
+                <p class="text dark-grayish-cyan tip">Select Tip %</p>
+                <div class="tip-option">5%</div>
+                <div class="tip-option">10%</div>
+                <div class="tip-option">15%</div>
+                <div class="tip-option">25%</div>
+                <div class="tip-option">50%</div>
+                <input type="text" class="tip-option" id="custom" placeholder="Custom" autocomplete="off"></input>
+            </div>
+            <p class="text dark-grayish-cyan number-people">Number of People</p>
+            <div class="number-container">
+                <img src="img/icon-person.svg" alt="" class="person">
+                <input type="text" placeholder="0" class="people very-dark-cyan" id="peoples"></input>
+            </div>
+        </section>
+        <section class="result-container">
+            <div class="container-total">
+                <p class="total">Tip Amount <br> <span class="dark-grayish-cyan">/ person</span></p>
+                <span class="total-amount" id="tip-amount">$0.00</span>
+            </div>
+            <div class="container-total">
+                <p class="total">Total <br> <span class="dark-grayish-cyan">/ person</span></p>
+                <span class="total-amount" id="total-amount">$0.00</span>
+            </div>
+            <span class="reset" id="reset">Reset</span>
+        </section>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
