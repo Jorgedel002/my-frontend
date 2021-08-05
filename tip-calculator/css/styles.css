@@ -94,11 +94,6 @@ body{
     font-weight: 700;
 }
 
-.tip-option:nth-child(4){
-    background-color: var(--Strong-cyan);
-    color: var(--Very--dark-cyan);
-}
-
 .tip-option:nth-child(7){
     background-color: var(--Light-grayish-cyan-2);
     color: var(--Dark-grayish-cyan-1);
@@ -197,3 +192,21 @@ body{
 .very-dark-cyan{
     color: var(--Very--dark-cyan);
 }
+
+.input-active{
+    box-shadow: 0 0 0 0.1em var(--Strong-cyan);
+}
+
+.tip-active{
+    background-color: var(--Strong-cyan);
+    color: var(--Very--dark-cyan);
+}
+
+.btn--ghost {
+    cursor: default;
+    opacity: 0.4;
+  }
+  .btn--ghost:hover, .btn--ghost:focus {
+    mix-blend-mode: color-dodge;
+  }
+

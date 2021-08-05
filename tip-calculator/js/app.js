@@ -6,6 +6,20 @@ const bill = document.querySelector("#bill"),
       tipTotal = document.querySelector("#total-amount"),
       reset = document.querySelector("#reset");
 
+
+
+function validateKey(evt){
+    let code = (evt.which) ? evt.which : evt.keyCode;
+
+    if (code==8){
+        return true;
+    }else if (code >=48 && code <=57){
+        return true;
+    }else{
+        return false;
+    }
+}      
+
 tip.addEventListener("click", e => {
     e.stopPropagation()
     if (e.target.parentNode != tip) return
@@ -16,19 +30,22 @@ tip.addEventListener("click", e => {
 })
 
 bill.addEventListener("click", e => {
-    validation()
-    activateResetButton()
+    validation();
+    activateResetButton();
+    validateKey();
 })
 
 custom.addEventListener('input', e => {
     if (/\d+/.test(custom.value)) percent = parseFloat(custom.value)
-    validation()
-    activateResetButton()
+    validation();
+    activateResetButton();
+    validateKey();
 })
 
 peoples.addEventListener('input', e => {
-    validation()
-    activateResetButton()
+    validation();
+    activateResetButton();
+    validateKey();
 })
 
 reset.addEventListener("click", e => {
@@ -37,6 +54,7 @@ reset.addEventListener("click", e => {
     tip.children[5].value = ''
     tipAmount.textContent = '0.00'
     tipTotal.textContent = '0.00'
+    reset.classList.add('btn-ghost')
     selectTipButtons()
 })
 
@@ -56,12 +74,17 @@ const showResult = (people, bill, percent) => {
 }
 
 const activateResetButton = () => {
-
+	reset.classList.remove('btn-ghost')
 }
 
 const selectTipButtons = e => {
-    for (let button of selectTipButtons.children) {
-        
+    for (let button of tip.children) {
+        button.classList.remove('tip-active')
+        button.classList.remove('input-active')
     }
+
+    if (e == undefined) return
+	if (tip.children[5] == e.target) e.target.classList.add('input-active');
+	else if (e.target.parentNode == tip) e.target.classList.add('tip-active');
 }
 
