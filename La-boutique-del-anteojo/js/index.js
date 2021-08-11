@@ -7,7 +7,7 @@ open.addEventListener('click', () => {
 })
 
 
-let images = ['/assets/img-promociones/1.jpg', '/assets/img-promociones/2.jpg'];
+let images = ['./assets/img-promociones/1.jpg', './assets/img-promociones/2.jpg'];
 
 let slider = document.getElementById('slider');
 
