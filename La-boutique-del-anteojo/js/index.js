@@ -1,11 +1,13 @@
-const btn = document.querySelector('#btn'),
-      navBar = document.querySelector('#nav-bar');
+const navBar = document.querySelector('#nav-bar'),
+      open = document.querySelector('#open');
 
-btn.addEventListener('click', () => {
+      
+open.addEventListener('click', () => {
     navBar.classList.toggle('active');
 })
 
-let images = ['/la-boutique/img/1.jpg', '/la-boutique/img/2.jpg'];
+
+let images = ['assets/img-promociones/1.jpg', 'assets/img-promociones/2.jpg'];
 
 let slider = document.getElementById('slider');
 
