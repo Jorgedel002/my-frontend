@@ -1,0 +1,70 @@
+:root{
+    --Heebo-family: 'Heebo', sans-serif;
+    --Oswald-family: 'Oswald', sans-serif;
+    --Roboto-Condense-family: 'Roboto Condese', sans-serif;
+    --Dark-purple: rgb(194, 0, 197);
+    --Very-light-violet: rgb(255, 234, 255);
+    --Dark-grayish-blue: rgb(82, 83, 102);
+    --Dark-purple-2: rgb(109, 9, 110);
+}
+
+main{
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.products-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    max-width: 242px;
+    font-family: var(--Oswald-family);
+    background-color: rgba(51, 51, 51, 0.5);
+    height: 26vh;
+    max-height:218px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: rgba(41, 41, 41, 0.3) 1px 1px 10px;
+}
+
+.product-card:nth-child(2){
+    background-color: rgb(129, 218, 167);
+}
+
+.lente-img{
+    display: block;
+    width: 100%;
+    max-width: 228px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.price-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 10px;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    height: 66px;
+    border-top-left-radius: 20px;
+}
+
+.name-product{
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+
+.price{
+    font-size: 18px;
+}
+

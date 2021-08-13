@@ -1,10 +1,3 @@
-const navBar = document.querySelector('#nav-bar'),
-      open = document.querySelector('#open');
-
-      
-open.addEventListener('click', () => {
-    navBar.classList.toggle('active');
-})
 
 
 let images = ['./assets/img-promociones/1.jpg', './assets/img-promociones/2.jpg'];
