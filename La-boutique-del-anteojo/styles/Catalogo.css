@@ -68,3 +68,11 @@ main{
     font-size: 18px;
 }
 
+.whatsapp-icon{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 20px 10px;
+    width: 50px;
+}
+
