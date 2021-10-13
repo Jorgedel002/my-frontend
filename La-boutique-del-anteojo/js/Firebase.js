@@ -10,5 +10,5 @@ var firebaseConfig = {
 function docReady(fn) {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+
 }

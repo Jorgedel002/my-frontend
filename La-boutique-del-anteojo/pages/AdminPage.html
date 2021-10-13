@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="docReady()">
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
-
+    
     <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
-
-    <script src="../js/Firebase.js"></script>
-
-    <form id="add-products">
-        <input type="text" placeholder="Nombre del producto">
-        <input type="text" placeholder="Precio del producto">
-        <input type="file">
-        <input type="color" accept="image/png">
-        <input type="submit" value="Agregar">
-    </form>
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>     
+        
+        <script src="../js/Firebase.js"></script>
+        
+        <form id="add-products">
+            <input type="text" placeholder="Nombre del producto" id="product-name">
+            <input type="text" placeholder="Precio del producto" id="product-price">
+            <input type="file" accept="image/png" id="product-img">
+            <input type="color" id="bg-color">
+            <input type="submit" value="Agregar"  id="submit-product">
+        </form>
+        
+        <script src="../js/Productos.js"></script>
 </body>
 </html>
